@@ -1,9 +1,9 @@
 ---
 home: true
-bgImage: '/index.jpg'
-heroText: fina dad标题
-tagline: finn 副标题
-actionText: 快速上手asd →
-actionLink: /zh/guide/
-footer: MIT Licensed | Copyright © 2018-present Evan You
+bgImage: '/img/banner-02.jpeg'
+bgImageStyle: {
+  height: '350px'
+}
+heroText: Mr.Finn'Blog
+description: In me the tiger sniffs the rose
 ---
