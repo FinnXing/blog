@@ -16,11 +16,11 @@ tags:
 
 - 打开阿里云控制台，进入云服务器ECS界面如下：
 
-![](/Users/xingfei/Documents/WorkSpace/blog/docs/.vuepress/public/img/阿里云ECS服务器SSH配置/1583499797008-0d68a4da-9dfb-4b01-b9fc-c2b2247d42af.png)
+![](../.vuepress/public/img/1583499797008-0d68a4da-9dfb-4b01-b9fc-c2b2247d42af.png)
 
 - 点击左边菜单中的实例，进入实例界面，界面中展示了实例的具体情况，包括配置、IP、状态、到期时间等。
 
-![img](/Users/xingfei/Documents/WorkSpace/blog/docs/.vuepress/public/img/阿里云ECS服务器SSH配置/1583499797046-a10541e8-1d7d-4f8a-b572-5dc2d4b400ef.png)
+![img](../.vuepress/public/img/1583499797046-a10541e8-1d7d-4f8a-b572-5dc2d4b400ef.png)
 
 - 点击右侧的**远程连接** ，首次连接会弹出远程连接密码，**记住此密码**，输入密码后连接成功。
 
@@ -52,8 +52,8 @@ tags:
 - 然后重启SSH服务、防火墙和服务器：`systemctl restart sshd`、`systemctl restart firewalld.service`、`shutdown -r now`。
 - 最后在阿里云控制台修改安全策略，添加22222端口，进入安全组规则后点击右上角快速创建规则：
 
-![](/Users/xingfei/Documents/WorkSpace/blog/docs/.vuepress/public/img/阿里云ECS服务器SSH配置/1583499796841-197cfc77-d7df-4033-bd4a-e196ca998f98.png)
-![](/Users/xingfei/Documents/WorkSpace/blog/docs/.vuepress/public/img/阿里云ECS服务器SSH配置/1583499796933-b3d49c98-1cf7-43c3-ac10-79b22dd97e5b.png)
+![](../.vuepress/public/img/1583499796841-197cfc77-d7df-4033-bd4a-e196ca998f98.png)
+![](../.vuepress/public/img/1583499796933-b3d49c98-1cf7-43c3-ac10-79b22dd97e5b.png)
 
 ## 配置完成
 
