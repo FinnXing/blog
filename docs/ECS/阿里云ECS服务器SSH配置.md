@@ -16,11 +16,11 @@ tags:
 
 - 打开阿里云控制台，进入云服务器ECS界面如下：
 
-![](https://cdn.nlark.com/yuque/0/2020/png/1064826/1583499797008-0d68a4da-9dfb-4b01-b9fc-c2b2247d42af.png#align=left&display=inline&height=359&originHeight=1424&originWidth=2854&size=0&status=done&style=none&width=720)
+![](/Users/xingfei/Documents/WorkSpace/blog/docs/.vuepress/public/img/阿里云ECS服务器SSH配置/1583499797008-0d68a4da-9dfb-4b01-b9fc-c2b2247d42af.png)
 
 - 点击左边菜单中的实例，进入实例界面，界面中展示了实例的具体情况，包括配置、IP、状态、到期时间等。
 
-![](https://cdn.nlark.com/yuque/0/2020/png/1064826/1583499797046-a10541e8-1d7d-4f8a-b572-5dc2d4b400ef.png#align=left&display=inline&height=574&originHeight=574&originWidth=2406&size=0&status=done&style=none&width=2406)
+![img](/Users/xingfei/Documents/WorkSpace/blog/docs/.vuepress/public/img/阿里云ECS服务器SSH配置/1583499797046-a10541e8-1d7d-4f8a-b572-5dc2d4b400ef.png)
 
 - 点击右侧的**远程连接** ，首次连接会弹出远程连接密码，**记住此密码**，输入密码后连接成功。
 
@@ -52,8 +52,9 @@ tags:
 - 然后重启SSH服务、防火墙和服务器：`systemctl restart sshd`、`systemctl restart firewalld.service`、`shutdown -r now`。
 - 最后在阿里云控制台修改安全策略，添加22222端口，进入安全组规则后点击右上角快速创建规则：
 
-![](https://cdn.nlark.com/yuque/0/2020/png/1064826/1583499796841-197cfc77-d7df-4033-bd4a-e196ca998f98.png#align=left&display=inline&height=1246&originHeight=1246&originWidth=2858&size=0&status=done&style=none&width=2858)
-![](https://cdn.nlark.com/yuque/0/2020/png/1064826/1583499796933-b3d49c98-1cf7-43c3-ac10-79b22dd97e5b.png#align=left&display=inline&height=1346&originHeight=1346&originWidth=1182&size=0&status=done&style=none&width=1182)
+![](/Users/xingfei/Documents/WorkSpace/blog/docs/.vuepress/public/img/阿里云ECS服务器SSH配置/1583499796841-197cfc77-d7df-4033-bd4a-e196ca998f98.png)
+![](/Users/xingfei/Documents/WorkSpace/blog/docs/.vuepress/public/img/阿里云ECS服务器SSH配置/1583499796933-b3d49c98-1cf7-43c3-ac10-79b22dd97e5b.png)
+
 ## 配置完成
 
 - 使用`ssh root@服务器公网IP -p 22222`连接服务器，输入密码连接成功
