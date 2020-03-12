@@ -16,7 +16,7 @@ tags:
 
 在OOS的管理后台界面中找到 **常用运维任务-批量管理软件** 菜单，选择操作中选择 **常见软件包管理系统apt/yum**，操作内容如图所示，然后选择实例，点击立即执行，几秒钟完成安装，服务器中就有了git服务，可以远程登录服务器后使用`git --version`查看git版本。
 
-<img src="../.vuepress/public/img/image-20200309113012905.png" alt="image-20200309113012905" style="zoom: 25%;" />
+<img src="https://img.xing666.net/blog/img/image-20200309113012905.png" alt="image-20200309113012905" style="zoom: 25%;" />
 
 
 

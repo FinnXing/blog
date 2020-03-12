@@ -2,6 +2,7 @@ module.exports = {
   title: 'Mr.Finn`Blog',
   dest: './html',
   theme: 'reco',
+  permalink: "/pages/:year:month:day",
   themeConfig: {
     type: 'blog',
     author: 'Mr.Finn',
@@ -24,7 +25,7 @@ module.exports = {
       ['meta', { name: 'viewport', content: 'width=device-width,initial-scale=1,user-scalable=no' }]
     ],
     // 右侧信息栏头像
-    authorAvatar: '/img/logo.png',
+    authorAvatar: 'https://img.xing666.net/blog/img/logo.png',
     // 备案
     record: '京ICP备17027294号-2',
     recordLink: 'http://www.beian.miit.gov.cn/',
