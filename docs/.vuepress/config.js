@@ -22,7 +22,8 @@ module.exports = {
       }
     },
     head: [
-      ['meta', { name: 'viewport', content: 'width=device-width,initial-scale=1,user-scalable=no' }]
+      ['meta', { name: 'viewport', content: 'width=device-width,initial-scale=1,user-scalable=no' }],
+      ['link', { rel: 'icon', href: 'https://img.xing666.net/blog/img/favicon.ico' }]
     ],
     // 右侧信息栏头像
     authorAvatar: 'https://img.xing666.net/blog/img/logo.png',
