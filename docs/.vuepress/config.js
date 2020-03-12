@@ -3,6 +3,10 @@ module.exports = {
   dest: './html',
   theme: 'reco',
   permalink: "/pages/:year:month:day",
+  head: [
+    ['meta', { name: 'viewport', content: 'width=device-width,initial-scale=1,user-scalable=no' }],
+    ['link', { rel: 'icon', href: 'https://img.xing666.net/blog/img/favicon.ico' }]
+  ],
   themeConfig: {
     type: 'blog',
     author: 'Mr.Finn',
@@ -21,10 +25,6 @@ module.exports = {
         text: '标签' // 默认文案 “标签”
       }
     },
-    head: [
-      ['meta', { name: 'viewport', content: 'width=device-width,initial-scale=1,user-scalable=no' }],
-      ['link', { rel: 'icon', href: 'https://img.xing666.net/blog/img/favicon.ico' }]
-    ],
     // 右侧信息栏头像
     authorAvatar: 'https://img.xing666.net/blog/img/logo.png',
     // 备案
