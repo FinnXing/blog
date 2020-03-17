@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>云服务器配置部署Nginx开发环境 | Mr.Finn`Blog</title>
+    <meta name="description" content="">
+    <meta name="generator" content="VuePress 1.3.1">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+  <link rel="icon" href="https://img.xing666.net/blog/img/favicon.ico">
+    
+    <link rel="preload" href="/assets/css/0.styles.2ed01ad8.css" as="style"><link rel="preload" href="/assets/js/app.1b392744.js" as="script"><link rel="preload" href="/assets/js/3.041ec172.js" as="script"><link rel="preload" href="/assets/js/1.90a0a741.js" as="script"><link rel="preload" href="/assets/js/10.fac32656.js" as="script"><link rel="prefetch" href="/assets/js/11.153148f9.js"><link rel="prefetch" href="/assets/js/12.f63cfa99.js"><link rel="prefetch" href="/assets/js/13.d7036d13.js"><link rel="prefetch" href="/assets/js/14.6518707f.js"><link rel="prefetch" href="/assets/js/4.89f03685.js"><link rel="prefetch" href="/assets/js/5.3556867c.js"><link rel="prefetch" href="/assets/js/6.b5c4466f.js"><link rel="prefetch" href="/assets/js/7.a806c7ae.js"><link rel="prefetch" href="/assets/js/8.4e3b19cd.js"><link rel="prefetch" href="/assets/js/9.ee917f01.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.2ed01ad8.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div><div class="theme-container" data-v-4698c43e><div data-v-4698c43e><div id="loader-wrapper" class="loading-wrapper" data-v-4b73742e data-v-4698c43e data-v-4698c43e><div class="loader-main" data-v-4b73742e><div data-v-4b73742e></div><div data-v-4b73742e></div><div data-v-4b73742e></div><div data-v-4b73742e></div></div> <!----> <!----></div> <div class="password-shadow password-wrapper-out" style="display:none;" data-v-6cbeab0a data-v-4698c43e data-v-4698c43e><h3 class="title" style="display:none;" data-v-6cbeab0a data-v-6cbeab0a>Mr.Finn`Blog</h3> <!----> <label id="box" class="inputBox" style="display:none;" data-v-6cbeab0a data-v-6cbeab0a><input type="password" value="" data-v-6cbeab0a> <span data-v-6cbeab0a>Konck! Knock!</span> <button data-v-6cbeab0a>OK</button></label> <div class="footer" style="display:none;" data-v-6cbeab0a data-v-6cbeab0a><span data-v-6cbeab0a><i class="iconfont reco-theme" data-v-6cbeab0a></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-6cbeab0a>vuePress-theme-reco</a></span> <span data-v-6cbeab0a><i class="iconfont reco-copyright" data-v-6cbeab0a></i> <a data-v-6cbeab0a><span data-v-6cbeab0a>Mr.Finn</span>
+            
+          <span data-v-6cbeab0a>2019 - </span>
+          2020
+        </a></span></div></div> <div class="hide" data-v-4698c43e><header class="navbar" data-v-4698c43e><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">Mr.Finn`Blog</span></a> <div class="links"><div class="color-picker"><a class="color-button"><i class="iconfont reco-color"></i></a> <div class="color-picker-menu" style="display:none;"><div class="mode-options"><h4 class="title">Choose mode</h4> <ul class="color-mode-options"><li class="dark">dark</li><li class="auto active">auto</li><li class="light">light</li></ul></div></div></div> <div class="search-box"><i class="iconfont reco-search"></i> <input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link"><i class="iconfont reco-home"></i>
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      分类
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/categories/服务器/" class="nav-link"><i class="iconfont undefined"></i>
+  服务器
+</a></li></ul></div></div><div class="nav-item"><a href="/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  标签
+</a></div><div class="nav-item"><a href="/timeline/" class="nav-link"><i class="iconfont reco-date"></i>
+  时间轴
+</a></div> <!----></nav></div></header> <div class="sidebar-mask" data-v-4698c43e></div> <aside class="sidebar" data-v-4698c43e><div class="personal-info-wrapper" data-v-6c8ffc9c><img src="https://img.xing666.net/blog/img/logo.png" alt="author-avatar" class="personal-img" data-v-6c8ffc9c> <h3 class="name" data-v-6c8ffc9c>
+    Mr.Finn
+  </h3> <div class="num" data-v-6c8ffc9c><div data-v-6c8ffc9c><h3 data-v-6c8ffc9c>3</h3> <h6 data-v-6c8ffc9c>文章</h6></div> <div data-v-6c8ffc9c><h3 data-v-6c8ffc9c>1</h3> <h6 data-v-6c8ffc9c>标签</h6></div></div> <hr data-v-6c8ffc9c></div> <nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link"><i class="iconfont reco-home"></i>
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      分类
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/categories/服务器/" class="nav-link"><i class="iconfont undefined"></i>
+  服务器
+</a></li></ul></div></div><div class="nav-item"><a href="/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  标签
+</a></div><div class="nav-item"><a href="/timeline/" class="nav-link"><i class="iconfont reco-date"></i>
+  时间轴
+</a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>云服务器配置部署Nginx开发环境</span> <!----></p> <!----></section></li></ul> </aside> <div class="password-shadow password-wrapper-in" style="display:none;" data-v-6cbeab0a data-v-4698c43e><h3 class="title" style="display:none;" data-v-6cbeab0a data-v-6cbeab0a>云服务器配置部署Nginx开发环境</h3> <!----> <label id="box" class="inputBox" style="display:none;" data-v-6cbeab0a data-v-6cbeab0a><input type="password" value="" data-v-6cbeab0a> <span data-v-6cbeab0a>Konck! Knock!</span> <button data-v-6cbeab0a>OK</button></label> <div class="footer" style="display:none;" data-v-6cbeab0a data-v-6cbeab0a><span data-v-6cbeab0a><i class="iconfont reco-theme" data-v-6cbeab0a></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-6cbeab0a>vuePress-theme-reco</a></span> <span data-v-6cbeab0a><i class="iconfont reco-copyright" data-v-6cbeab0a></i> <a data-v-6cbeab0a><span data-v-6cbeab0a>Mr.Finn</span>
+            
+          <span data-v-6cbeab0a>2019 - </span>
+          2020
+        </a></span></div></div> <div data-v-4698c43e><main class="page"><!----> <div class="page-title" style="display:none;"><h1>云服务器配置部署Nginx开发环境</h1> <hr> <div data-v-484a899e><i class="iconfont reco-account" data-v-484a899e><span data-v-484a899e>Mr.Finn</span></i> <i class="iconfont reco-date" data-v-484a899e><span data-v-484a899e>2020-03-17</span></i> <!----> <i class="iconfont reco-tag tags" data-v-484a899e><span class="tag-item" data-v-484a899e>
+      服务器
+    </span></i></div></div> <div class="theme-reco-content content__default" style="display:none;"><p>当初买ECS的初衷就是想搭建自己的博客，记录一些学习和生活的笔记，有了自己的域名和服务器以后就可以搭建属于自己的博客了，域名需要先行备案和解析到服务器，现在流行的静态博客（hexo、vuepress）都是基于Nginx服务器的，所以需要先在服务器安装和配置Nginx环境。</p> <h3 id="_1、安装nginx"><a href="#_1、安装nginx" class="header-anchor">#</a> 1、安装Nginx</h3> <p>​	安装Nginx很简单，只需一条命令即可，先ssh登录服务器，然后使用以下命令安装：</p> <p>​	<code>yum install -y nginx</code></p> <h3 id="_2、配置nginx"><a href="#_2、配置nginx" class="header-anchor">#</a> 2、配置Nginx</h3> <p>​	Nginx的配置文件默认在<code>/etc/nginx/</code>目录下，使用命令 <code>vim /etc/nginx/nginx.conf</code> 编辑配置文件添加以下	配置：</p> <div class="language-nginx extra-class"><pre class="language-nginx"><code><span class="token comment">## For more information on configuration, see:</span>
+<span class="token comment">#   * Official English Documentation: http://nginx.org/en/docs/</span>
+<span class="token comment">#   * Official Russian Documentation: http://nginx.org/ru/docs/</span>
+
+<span class="token keyword">user</span> nginx<span class="token punctuation">;</span>
+<span class="token keyword">worker_processes</span> auto<span class="token punctuation">;</span>
+<span class="token keyword">error_log</span> <span class="token operator">/</span>var<span class="token operator">/</span>log<span class="token operator">/</span>nginx<span class="token operator">/</span>error<span class="token punctuation">.</span>log<span class="token punctuation">;</span>
+<span class="token keyword">pid</span> <span class="token operator">/</span>run<span class="token operator">/</span>nginx<span class="token punctuation">.</span><span class="token keyword">pid</span><span class="token punctuation">;</span>
+
+<span class="token comment"># Load dynamic modules. See /usr/share/doc/nginx/README.dynamic.</span>
+<span class="token keyword">include</span> <span class="token operator">/</span>usr<span class="token operator">/</span>share<span class="token operator">/</span>nginx<span class="token operator">/</span>modules<span class="token operator">/</span><span class="token operator">*</span><span class="token punctuation">.</span>conf<span class="token punctuation">;</span>
+
+<span class="token keyword">events</span> <span class="token punctuation">{</span>
+    <span class="token keyword">worker_connections</span> <span class="token number">1024</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span> 
+<span class="token comment"># For more information on configuration, see:</span>
+<span class="token comment">#   * Official English Documentation: http://nginx.org/en/docs/</span>
+<span class="token comment">#   * Official Russian Documentation: http://nginx.org/ru/docs/</span>
+
+<span class="token keyword">user</span> nginx<span class="token punctuation">;</span>
+<span class="token keyword">worker_processes</span> auto<span class="token punctuation">;</span>
+<span class="token keyword">error_log</span> <span class="token operator">/</span>var<span class="token operator">/</span>log<span class="token operator">/</span>nginx<span class="token operator">/</span>error<span class="token punctuation">.</span>log<span class="token punctuation">;</span>
+<span class="token keyword">pid</span> <span class="token operator">/</span>run<span class="token operator">/</span>nginx<span class="token punctuation">.</span><span class="token keyword">pid</span><span class="token punctuation">;</span>
+
+<span class="token comment"># Load dynamic modules. See /usr/share/doc/nginx/README.dynamic.</span>
+<span class="token keyword">include</span> <span class="token operator">/</span>usr<span class="token operator">/</span>share<span class="token operator">/</span>nginx<span class="token operator">/</span>modules<span class="token operator">/</span><span class="token operator">*</span><span class="token punctuation">.</span>conf<span class="token punctuation">;</span>
+
+<span class="token keyword">events</span> <span class="token punctuation">{</span>
+    <span class="token keyword">worker_connections</span> <span class="token number">1024</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">http</span> <span class="token punctuation">{</span>
+    <span class="token keyword">log_format</span>  main  <span class="token string">'$remote_addr - $remote_user [$time_local] &quot;$request&quot; '</span>
+                      <span class="token string">'$status $body_bytes_sent &quot;$http_referer&quot; '</span>
+                      <span class="token string">'&quot;$http_user_agent&quot; &quot;$http_x_forwarded_for&quot;'</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">access_log</span>  <span class="token operator">/</span>var<span class="token operator">/</span>log<span class="token operator">/</span>nginx<span class="token operator">/</span>access<span class="token punctuation">.</span>log  main<span class="token punctuation">;</span>
+    <span class="token keyword">proxy_hide_header</span> X<span class="token operator">-</span>Powered<span class="token operator">-</span>By<span class="token punctuation">;</span>
+    <span class="token keyword">sendfile</span>            on<span class="token punctuation">;</span>
+    <span class="token keyword">tcp_nopush</span>          on<span class="token punctuation">;</span>
+    <span class="token keyword">tcp_nodelay</span>         on<span class="token punctuation">;</span>
+    <span class="token keyword">keepalive_timeout</span>   <span class="token number">65</span><span class="token punctuation">;</span>
+    <span class="token keyword">types_hash_max_size</span> <span class="token number">2048</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">include</span>             <span class="token operator">/</span>etc<span class="token operator">/</span>nginx<span class="token operator">/</span>mime<span class="token punctuation">.</span><span class="token keyword">types</span><span class="token punctuation">;</span>
+    <span class="token keyword">default_type</span>        application<span class="token operator">/</span>octet<span class="token operator">-</span>stream<span class="token punctuation">;</span>
+
+    <span class="token comment"># Load modular configuration files from the /etc/nginx/conf.d directory.</span>
+    <span class="token comment"># See http://nginx.org/en/docs/ngx_core_module.html#include</span>
+    <span class="token comment"># for more information.</span>
+    <span class="token keyword">include</span> <span class="token operator">/</span>etc<span class="token operator">/</span>nginx<span class="token operator">/</span>conf<span class="token punctuation">.</span>d<span class="token operator">/</span><span class="token operator">*</span><span class="token punctuation">.</span>conf<span class="token punctuation">;</span>
+
+    <span class="token keyword">server</span> <span class="token punctuation">{</span>
+				<span class="token comment"># http配置</span>
+        <span class="token keyword">listen</span>       <span class="token number">80</span> default_server<span class="token punctuation">;</span>
+        <span class="token keyword">listen</span>       <span class="token punctuation">[</span><span class="token punctuation">:</span><span class="token punctuation">:</span><span class="token punctuation">]</span><span class="token punctuation">:</span><span class="token number">80</span> default_server<span class="token punctuation">;</span>
+				<span class="token comment"># 域名</span>
+        <span class="token keyword">server_name</span>  xing666<span class="token punctuation">.</span>net<span class="token punctuation">;</span>
+				<span class="token keyword">server_tokens</span> off<span class="token punctuation">;</span>
+				<span class="token comment"># 静态页面路径，请根据自己的静态页面放置路径填写</span>
+        <span class="token keyword">root</span>         <span class="token operator">/</span>home<span class="token operator">/</span>blog<span class="token punctuation">;</span>
+
+        <span class="token comment"># Load configuration files for the default server block.</span>
+        <span class="token keyword">include</span> <span class="token operator">/</span>etc<span class="token operator">/</span>nginx<span class="token operator">/</span>default<span class="token punctuation">.</span>d<span class="token operator">/</span><span class="token operator">*</span><span class="token punctuation">.</span>conf<span class="token punctuation">;</span>
+
+        <span class="token keyword">location</span> <span class="token operator">/</span> <span class="token punctuation">{</span>
+        <span class="token punctuation">}</span>
+
+        <span class="token keyword">error_page</span> <span class="token number">404</span> <span class="token operator">/</span><span class="token number">404.</span>html<span class="token punctuation">;</span>
+            <span class="token keyword">location</span> <span class="token operator">=</span> <span class="token operator">/</span><span class="token number">40</span>x<span class="token punctuation">.</span>html <span class="token punctuation">{</span>
+        <span class="token punctuation">}</span>
+
+        <span class="token keyword">error_page</span> <span class="token number">500</span> <span class="token number">502</span> <span class="token number">503</span> <span class="token number">504</span> <span class="token operator">/</span><span class="token number">50</span>x<span class="token punctuation">.</span>html<span class="token punctuation">;</span>
+            <span class="token keyword">location</span> <span class="token operator">=</span> <span class="token operator">/</span><span class="token number">50</span>x<span class="token punctuation">.</span>html <span class="token punctuation">{</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+
+<span class="token comment"># Settings for a TLS enabled server.</span>
+<span class="token comment">#</span>
+    <span class="token keyword">server</span> <span class="token punctuation">{</span>
+				<span class="token comment"># https配置</span>
+        <span class="token keyword">listen</span>       <span class="token number">443</span> <span class="token keyword">ssl</span> http2 default_server<span class="token punctuation">;</span>
+<span class="token comment">#       listen       [::]:443 ssl http2 default_server;</span>
+				
+				<span class="token comment"># 域名</span>
+        <span class="token keyword">server_name</span>  xing666<span class="token punctuation">.</span>net<span class="token punctuation">;</span>
+   			<span class="token keyword">server_tokens</span> off<span class="token punctuation">;</span>
+				<span class="token comment"># 静态页面路径，请根据自己的静态页面放置路径填写</span>
+        <span class="token keyword">root</span>         <span class="token operator">/</span>home<span class="token operator">/</span>blog<span class="token punctuation">;</span>
+        <span class="token keyword">index</span> <span class="token keyword">index</span><span class="token punctuation">.</span>html <span class="token keyword">index</span><span class="token punctuation">.</span>htm<span class="token punctuation">;</span>
+<span class="token comment">#</span>
+<span class="token comment">#        # Load configuration files for the default server block.</span>
+<span class="token comment">#        include /etc/nginx/default.d/*.conf;</span>
+<span class="token comment">#</span>
+        <span class="token keyword">location</span> <span class="token operator">/</span> <span class="token punctuation">{</span>
+	  			<span class="token keyword">root</span> <span class="token operator">/</span>home<span class="token operator">/</span>blog<span class="token punctuation">;</span>
+	  			<span class="token keyword">index</span> <span class="token keyword">index</span><span class="token punctuation">.</span>html<span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+<span class="token comment">#</span>
+<span class="token comment">#        error_page 404 /404.html;</span>
+<span class="token comment">#            location = /40x.html {</span>
+<span class="token comment">#        }</span>
+<span class="token comment">#</span>
+<span class="token comment">#        error_page 500 502 503 504 /50x.html;</span>
+<span class="token comment">#            location = /50x.html {</span>
+<span class="token comment">#        }</span>
+    <span class="token punctuation">}</span>   
+<span class="token punctuation">}</span>
+
+</code></pre></div><p>​	以上配置只是一个示例。</p> <h3 id="_3、检查配置并启动nginx服务"><a href="#_3、检查配置并启动nginx服务" class="header-anchor">#</a> 3、检查配置并启动Nginx服务</h3> <p>​	检查Nginx语法：<code>nginx -t</code></p> <p>​	启动Nginx服务：<code>nginx start</code></p> <p>​	查看80和443端口是否被监听：<code>netstat -ntpl|grep 80</code> <code>netstat -ntpl|grep 443</code></p> <p>​	配置好Nginx后，进行Nginx语法检查，检查通过后启动或者重载Nginx服务器，并查看80和443端口是否被监听，上述操作都顺利通过后，服务器环境就搭建完成了。</p> <h3 id="_4、设置安全端口"><a href="#_4、设置安全端口" class="header-anchor">#</a> 4、设置安全端口</h3> <p>​	在安全规则的入口方向，添加80、8080、443端口的允许访问规则，如图</p> <p><img src="https://img.xing666.net/blog/img/2020-03-17-015717.png" alt="image-20200317095717489"></p> <h3 id="_5、开放防火墙端口"><a href="#_5、开放防火墙端口" class="header-anchor">#</a> 5、开放防火墙端口</h3> <p>​	如果启动的服务器的防火墙，还需要开放防火墙的80、8080、443端口，具体步骤如下：</p> <p>​	查看防火墙规则：<code>firewall-cmd --list-all</code></p> <p>​	开放防火墙端口（以80端口为例）：<code>firewall-cmd --permanent --add-port=80/tcp</code></p> <p>​	重启防火墙：<code>firewall-cmd --reload</code></p> <hr> <p>如果域名解析已完成，到这一步就可以访问博客了，接下来说说如何配置https。浏览器默认http访问是不安全的，所以很多人都想开启https，开启https的前提是需要有SSL证书，个人购买推荐阿里云的Symantec免费证书，具体操作如下：</p> <h3 id="_6、购买ssl证书"><a href="#_6、购买ssl证书" class="header-anchor">#</a> 6、购买SSL证书</h3> <p>​	进入阿里云控制台找到SSL证书菜单，点击购买证书，选择免费版（个人）DV进行购买</p> <p><img src="https://img.xing666.net/blog/img/2020-03-17-020659.png" alt="image-20200317100659315"></p> <p><img src="https://img.xing666.net/blog/img/2020-03-17-020750.png" alt="image-20200317100750864"></p> <h3 id="_7、下载ssl证书"><a href="#_7、下载ssl证书" class="header-anchor">#</a> 7、下载SSL证书</h3> <p>​	购买成功以后就可以在SSL证书里看见自己的证书了，先绑定自己的域名，然后点击右边的下载按钮，选择Nginx版下载。</p> <p><img src="https://img.xing666.net/blog/img/2020-03-17-022144.png" alt="image-20200317102143928"></p> <p><img src="https://img.xing666.net/blog/img/2020-03-17-022223.png" alt="image-20200317102222594"></p> <p>​	下载的证书有两个文件，一个是.key格式的，一个是.pem，在服务器上<code>/etc/nginx/nginx.conf</code>同级目录下新建一个cert文件夹，使用scp命令将两个文件放进去。</p> <p><code>scp 本地下载后的目录/a.pem root@云服务器ip:/etc/nginx/cert</code></p> <h3 id="_8、nginx配置ssl证书"><a href="#_8、nginx配置ssl证书" class="header-anchor">#</a> 8、Nginx配置SSL证书</h3> <p>​	打开<code>nginx.conf</code>配置文件，在https server里添加如下配置：</p> <div class="language-nginx extra-class"><pre class="language-nginx"><code><span class="token keyword">server</span> <span class="token punctuation">{</span>
+        <span class="token keyword">listen</span>       <span class="token number">443</span> <span class="token keyword">ssl</span> http2 default_server<span class="token punctuation">;</span>
+        <span class="token keyword">server_name</span>  xing666<span class="token punctuation">.</span>net<span class="token punctuation">;</span>
+   	    <span class="token keyword">server_tokens</span> off<span class="token punctuation">;</span>
+        <span class="token keyword">root</span>         <span class="token operator">/</span>home<span class="token operator">/</span>blog<span class="token operator">/</span>html<span class="token punctuation">;</span>
+        <span class="token keyword">index</span> <span class="token keyword">index</span><span class="token punctuation">.</span>html <span class="token keyword">index</span><span class="token punctuation">.</span>htm<span class="token punctuation">;</span>
+  			<span class="token comment"># SSL配置</span>
+        <span class="token keyword">ssl_certificate</span> <span class="token string">&quot;/etc/nginx/cert/文件名.pem&quot;</span><span class="token punctuation">;</span>
+        <span class="token keyword">ssl_certificate_key</span> <span class="token string">&quot;/etc/nginx/cert/文件名.key&quot;</span><span class="token punctuation">;</span>
+        <span class="token keyword">ssl_session_timeout</span>  <span class="token number">10</span>m<span class="token punctuation">;</span>
+        <span class="token keyword">ssl_protocols</span> TLSv1 TLSv1<span class="token punctuation">.</span><span class="token number">1</span> TLSv1<span class="token punctuation">.</span><span class="token number">2</span><span class="token punctuation">;</span>
+        <span class="token keyword">ssl_ciphers</span> ECDHE<span class="token operator">-</span>RSA<span class="token operator">-</span>AES128<span class="token operator">-</span>GCM<span class="token operator">-</span>SHA256<span class="token punctuation">:</span>ECDHE<span class="token punctuation">:</span>ECDH<span class="token punctuation">:</span>AES<span class="token punctuation">:</span>HIGH<span class="token punctuation">:</span><span class="token operator">!</span>NULL<span class="token punctuation">:</span><span class="token operator">!</span>aNULL<span class="token punctuation">:</span><span class="token operator">!</span>MD5<span class="token punctuation">:</span><span class="token operator">!</span>ADH<span class="token punctuation">:</span><span class="token operator">!</span>RC4<span class="token punctuation">;</span>
+        <span class="token keyword">ssl_prefer_server_ciphers</span> on<span class="token punctuation">;</span>
+  
+        <span class="token keyword">location</span> <span class="token operator">/</span> <span class="token punctuation">{</span>
+	        <span class="token keyword">root</span> <span class="token operator">/</span>home<span class="token operator">/</span>blog<span class="token punctuation">;</span>
+	        <span class="token keyword">index</span> <span class="token keyword">index</span><span class="token punctuation">.</span>html<span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span> 
+</code></pre></div><p>添加完成后检查Nginx语法是否正确，然后重启Nginx服务即可</p> <p><code>nginx -t</code></p> <p><code>nginx -s reload</code></p> <p>到这里SSL证书配置完成，可以愉快的访问https://www.xing666.net了。</p></div> <footer class="page-edit" style="display:none;"><!----> <!----></footer> <!----> <!----></main> <!----> <div class="comments-wrapper" data-v-4698c43e><!----></div></div></div></div></div></div><div class="global-ui"><div class="back-to-ceiling" style="right:1rem;bottom:6rem;width:2.5rem;height:2.5rem;border-radius:.25rem;line-height:2.5rem;display:none;" data-v-a81d141e data-v-a81d141e><svg t="1574745035067" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5404" class="icon" data-v-a81d141e><path d="M526.60727968 10.90185116a27.675 27.675 0 0 0-29.21455937 0c-131.36607665 82.28402758-218.69155461 228.01873535-218.69155402 394.07834331a462.20625001 462.20625001 0 0 0 5.36959153 69.94390903c1.00431239 6.55289093-0.34802892 13.13561351-3.76865779 18.80351572-32.63518765 54.11355614-51.75690182 118.55860487-51.7569018 187.94566865a371.06718723 371.06718723 0 0 0 11.50484808 91.98906777c6.53300375 25.50556257 41.68394495 28.14064038 52.69160883 4.22606766 17.37162448-37.73630017 42.14135425-72.50938081 72.80769204-103.21549295 2.18761121 3.04276886 4.15646224 6.24463696 6.40373557 9.22774369a1871.4375 1871.4375 0 0 0 140.04691725 5.34970492 1866.36093723 1866.36093723 0 0 0 140.04691723-5.34970492c2.24727335-2.98310674 4.21612437-6.18497483 6.3937923-9.2178004 30.66633723 30.70611158 55.4360664 65.4791928 72.80769147 103.21549355 11.00766384 23.91457269 46.15860503 21.27949489 52.69160879-4.22606768a371.15156223 371.15156223 0 0 0 11.514792-91.99901164c0-69.36717486-19.13165746-133.82216804-51.75690182-187.92578088-3.42062944-5.66790279-4.76302748-12.26056868-3.76865837-18.80351632a462.20625001 462.20625001 0 0 0 5.36959269-69.943909c-0.00994388-166.08943902-87.32547796-311.81420293-218.6915546-394.09823051zM605.93803103 357.87693858a93.93749974 93.93749974 0 1 1-187.89594924 6.1e-7 93.93749974 93.93749974 0 0 1 187.89594924-6.1e-7z" p-id="5405" data-v-a81d141e></path><path d="M429.50777625 765.63860547C429.50777625 803.39355007 466.44236686 1000.39046097 512.00932183 1000.39046097c45.56695499 0 82.4922232-197.00623328 82.5015456-234.7518555 0-37.75494459-36.9345906-68.35043303-82.4922232-68.34111062-45.57627738-0.00932239-82.52019037 30.59548842-82.51086798 68.34111062z" p-id="5406" data-v-a81d141e></path></svg></div></div></div>
+    <script src="/assets/js/app.1b392744.js" defer></script><script src="/assets/js/3.041ec172.js" defer></script><script src="/assets/js/1.90a0a741.js" defer></script><script src="/assets/js/10.fac32656.js" defer></script>
+  </body>
+</html>
