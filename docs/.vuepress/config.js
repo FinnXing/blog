@@ -26,8 +26,8 @@ module.exports = {
       }
     },
     valineConfig: {
-      appId: 'bd53gbJ5cc0D0shcdgsPRzsG-gzGzoHsz',// your appId
-      appKey: 'Giwu4BSKaxvNoGYD9dVOKMBC', // your appKey
+      appId: 'cFcaBsNGKCKs9BhEkRl63BU4-gzGzoHsz',// your appId
+      appKey: 'V7sPldWWGzYCl5glPimcNXyN', // your appKey
     },
     // 右侧信息栏头像
     authorAvatar: 'https://img.xing666.net/blog/img/logo.png',
