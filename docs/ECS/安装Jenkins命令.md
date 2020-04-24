@@ -28,8 +28,17 @@ Ps:如果没有Jenkins的image，docker会自动下载Jenkins的image
 
 
 
-修改清华源https://mirrors.tuna.tsinghua.edu.cn/jenkins/updates/update-center.json
+插件加速
+cd {你的Jenkins工作目录}/updates #进入更新配置位置
+sed -i 's/http:\/\/updates.jenkins-ci.org\/download/https:\/\/mirrors.tuna.tsinghua.edu.cn\/jenkins/g' default.json && sed -i 's/http:\/\/www.google.com/https:\/\/www.baidu.com/g' default.json
 
 推荐插件
 
 git client    gitlab 
+Build With Parameters
+ThinBackup
+WMI Windows Agents
+Build Timeout
+AnsiColor
+Folders
+Dashboard View
